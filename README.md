@@ -4,6 +4,12 @@
 
 当前版本采用约 1.6 英寸儿童手表的界面形式，通过左右滑动或点击底部定位圆点切换页面。项目早期方案名为“画伴·食光”，此仓库说明以现有的“绿芽 blooming”手表端代码为准。
 
+## 在线体验
+
+[打开绿芽 blooming 在线 Demo](https://yirandeng.github.io/blooming-watch-demo/web-demo/)
+
+分享上面的链接即可让别人直接打开网页原型，无需登录 GitHub。仓库首页用于查看源码和项目说明。
+
 ## 快速开始
 
 无需安装依赖或执行构建，直接用浏览器打开 [`web-demo/index.html`](./web-demo/index.html) 即可体验主要流程。
@@ -79,7 +85,7 @@ node --check web-demo/app.js
 
 此项目可以托管在支持静态文件的网站服务中。将发布目录设为 `web-demo`，无需安装依赖或配置构建命令；保留 `assets/`、CSS 和 JavaScript 的相对路径。
 
-上传到 GitHub 仅保存源码；要获得可在线访问的演示地址，还需要单独配置静态网站托管。
+当前使用 GitHub Pages，从 `main` 分支的 `/ (root)` 目录发布。网页入口位于 `web-demo/`，因此在线演示地址包含 `/web-demo/`。更新 `main` 分支后，GitHub Pages 会重新构建和发布网站。
 
 ## 后续开发方向
 
