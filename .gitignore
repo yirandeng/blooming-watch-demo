@@ -1,0 +1,19 @@
+# Operating system and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Local agent configuration
+.codex/
+.agents/
+
+# Local configuration and dependencies
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+
+# Reference audio is not used by the demo
+web-demo/assets/*-voice-reference.*
