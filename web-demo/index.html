@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>绿芽 blooming 儿童手表端 Demo</title>
+    <meta name="theme-color" content="#EEF2FF" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="demo-shell">
+      <section class="watch" aria-label="绿芽 blooming 儿童手表端原型">
+        <header class="watch-status">
+          <span>9:41</span>
+          <strong>绿芽 blooming</strong>
+          <span>82%</span>
+        </header>
+
+        <div id="screen" class="screen" aria-live="polite"></div>
+
+        <nav id="tabbar" class="tabbar" aria-label="页面位置">
+          <button class="tab is-active" data-tab="garden" type="button" aria-label="花园">
+            <span></span>
+          </button>
+          <button class="tab" data-tab="food" type="button" aria-label="饮食">
+            <span></span>
+          </button>
+          <button class="tab" data-tab="move" type="button" aria-label="运动">
+            <span></span>
+          </button>
+          <button class="tab" data-tab="learn" type="button" aria-label="花房">
+            <span></span>
+          </button>
+          <button class="tab" data-tab="family" type="button" aria-label="陪伴">
+            <span></span>
+          </button>
+        </nav>
+      </section>
+
+      <aside class="brief-panel" aria-label="修改说明">
+        <div class="brand-card">
+          <img src="./assets/yuanqi-logo.png" alt="" />
+          <div>
+            <p class="eyebrow">小学阶段儿童健康教育</p>
+            <h1>绿芽 blooming</h1>
+            <p>1.6 英寸手表端健康教育原型：一屏一个动作，左右滑动，像照顾小芽一样照顾身体。</p>
+          </div>
+        </div>
+
+        <section>
+          <h2>本轮调整</h2>
+          <div class="chip-grid">
+            <span>44px 触控目标</span>
+            <span>小圆点定位</span>
+            <span>自然绿配色</span>
+            <span>大图标模式</span>
+            <span>柔和语音播报</span>
+            <span>减少连续动画</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>当前页说明</h2>
+          <div id="screenMeta" class="screen-meta"></div>
+        </section>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
